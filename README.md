@@ -6,15 +6,22 @@ This is a simple end-to-end ETL(Extract, Transform, load) pipeline built using P
 ## The Project Objective
 
 The goal of this project is to:
-- Extract raw loan data from a CSV file
-- Clean and transform the dataset
-- Perform basic feature engineering
-- Load the processed data into a SQLite database
+## 1. Extract
+- Loaded loan dataset from CSV using pandas
 
+## 2. Transform
+- Handled missing values
+- Cleaned categorical data
+- Basic feature engineering(TotalIncome & IncomeToRatio)
+- Encoded Loan_status
+
+  ## 3. Load
+  Stored cleaned data into SQLite database(loan.db)
 ---
 
 ## Project Structure
 
+![project structure ](https://github.com/qinisela-ndlovu/Loan-Application-ETL-Pipeline-/blob/main/Project%20structure.png)
 
 ---
 
@@ -25,6 +32,10 @@ The goal of this project is to:
 - SQLite (built-in library)
 
 ---
+
+## Snap of pipeline runner:
+
+![ETL Pipeline Output](https://github.com/qinisela-ndlovu/Loan-Application-ETL-Pipeline-/blob/main/Pipeline%20Runner.png)
 
 ## How to Run?
 
